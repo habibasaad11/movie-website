@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+
+<header class="navbar">
+    
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html" class="active">Movies</a>
+        <a href="series.html">Series</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button class="search-btn">⌕</button>
+        <button class="profile-btn">👤</button>
+    </div>
+</header>
+
+<main>
+
+    <section class="movies-header">
+        <div>
+            <p class="small-title">EXPLORE</p>
+            <h1>Movies</h1>
+            <p class="description">
+                Discover movies from different genres, eras, and worlds.
+            </p>
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Action</button>
+            <button class="filter-btn">Sci-Fi</button>
+            <button class="filter-btn">Drama</button>
+            <button class="filter-btn">Fantasy</button>
+        </div>
+    </section>
+
+    <section class="movies-grid">
+
+        <div class="movie-card" onclick="openMovie(1)">
+            <div class="poster-container">
+                <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar">
+                <div class="rating">★ 8.7</div>
+            </div>
+
+            <div class="movie-info">
+                <h3>Interstellar</h3>
+                <p>2014 • Sci-Fi</p>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="openMovie(2)">
+            <div class="poster-container">
+                <img src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg" alt="Inception">
+                <div class="rating">★ 8.8</div>
+            </div>
+
+            <div class="movie-info">
+                <h3>Inception</h3>
+                <p>2010 • Sci-Fi</p>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="openMovie(3)">
+            <div class="poster-container">
+                <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Dune Part Two">
+                <div class="rating">★ 8.6</div>
+            </div>
+
+            <div class="movie-info">
+                <h3>Dune: Part Two</h3>
+                <p>2024 • Sci-Fi</p>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="openMovie(4)">
+            <div class="poster-container">
+                <img src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="The Batman">
+                <div class="rating">★ 7.8</div>
+            </div>
+
+            <div class="movie-info">
+                <h3>The Batman</h3>
+                <p>2022 • Action</p>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="openMovie(5)">
+            <div class="poster-container">
+                <img src="https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg" alt="Avatar">
+                <div class="rating">★ 7.8</div>
+            </div>
+
+            <div class="movie-info">
+                <h3>Avatar</h3>
+                <p>2009 • Fantasy</p>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-logo">Cine<span>Verse</span></div>
+
+    <p>Discover your next favorite movie or series.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="series.html">Series</a>
+    </div>
+
+    <p class="copyright"></p>
+</footer>
+
+<script src="movies.js"></script>
+
+</body>
+</html>

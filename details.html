@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movie Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+<header class="navbar">
+    <a href="index.html" class="logo">
+
+       <span class="logo-accent">
+            CineVerse
+        </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="movies.html">
+            Movies
+        </a>
+
+        <a href="series.html">
+            Series
+        </a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button class="search-btn">
+            search
+        </button>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+<main>
+
+    <section class="movie-hero">
+
+        <div
+            class="hero-background"
+            id="heroBackground"
+        ></div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="poster-wrapper">
+
+                <img
+                    id="moviePoster"
+                    src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                    alt="Movie Poster"
+                >
+
+            </div>
+
+            <div class="movie-details">
+
+
+                <p class="category-label">
+                    FEATURED MOVIE
+                </p>
+
+
+                <h1 id="movieTitle">
+                    Interstellar
+                </h1>
+
+                <div class="movie-meta">
+
+                    <span class="rating">
+                        ⭐
+                        <strong id="movieRating">
+                            8.7
+                        </strong>
+                    </span>
+
+                    <span class="separator">
+                        •
+                    </span>
+
+                    <span id="movieYear">
+                        2014
+                    </span>
+
+                    <span class="separator">
+                        •
+                    </span>
+
+                    <span id="movieDuration">
+                        2h 49m
+                    </span>
+
+                </div>
+
+                <div
+                    class="genres"
+                    id="movieGenres"
+                >
+
+                    <span>
+                        Sci-Fi
+                    </span>
+
+                    <span>
+                        Adventure
+                    </span>
+
+                    <span>
+                        Drama
+                    </span>
+
+                </div>
+
+
+                <p
+                    class="description"
+                    id="movieDescription"
+                >
+
+                    A team of explorers travel through a wormhole
+                    in space in an attempt to ensure humanity's
+                    survival.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="btn-primary"
+                        id="trailerBtn"
+                    >
+                        <span>▶</span>
+                        Watch Trailer
+                    </button>
+
+
+                    <button
+                        class="btn-secondary"
+                        id="favoriteBtn"
+                    >
+                        <span id="favoriteIcon">
+                            ♡
+                        </span>
+
+                        Add to List
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="content-section">
+
+
+        <div class="information-grid">
+            <div class="info-column">
+
+                <p class="section-label">
+                    ABOUT
+                </p>
+
+                <h2>
+                    About the Movie
+                </h2>
+
+                <p id="aboutMovie">
+
+                    Interstellar follows a group of astronauts
+                    who travel through a wormhole near Saturn
+                    in search of a new home for humanity.
+
+                </p>
+
+            </div>
+
+            <div class="info-column">
+
+                <p class="section-label">
+                    DETAILS
+                </p>
+
+                <h2>
+                    Movie Information
+                </h2>
+
+
+                <div class="info-list">
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Director
+                        </span>
+
+                        <strong id="director">
+                            Christopher Nolan
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Release Date
+                        </span>
+
+                        <strong id="releaseDate">
+                            November 7, 2014
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Language
+                        </span>
+
+                        <strong>
+                            English
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Country
+                        </span>
+
+                        <strong>
+                            USA
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="content-section">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    CAST
+                </p>
+
+                <h2>
+                    Meet the Cast
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="cast-grid">
+
+
+            <div class="cast-card">
+
+                <div class="cast-image">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/5gQ2n5iH4Kp9VQkY2v8J8vQxQ2m.jpg"
+                        alt="Matthew McConaughey"
+                    >
+
+                </div>
+
+                <div class="cast-info">
+
+                    <h3>
+                        Matthew McConaughey
+                    </h3>
+
+                    <p>
+                        Cooper
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cast-card">
+
+                <div class="cast-image">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/8C3Xk6L2X6P8Y5nK8Q7m8s5M5Q4.jpg"
+                        alt="Anne Hathaway"
+                    >
+
+                </div>
+
+                <div class="cast-info">
+
+                    <h3>
+                        Anne Hathaway
+                    </h3>
+
+                    <p>
+                        Amelia Brand
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cast 3 -->
+
+            <div class="cast-card">
+
+                <div class="cast-image">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/7d6jJ0Y5Q8sM8P2X4K9L2C7N3Q.jpg"
+                        alt="Jessica Chastain"
+                    >
+
+                </div>
+
+                <div class="cast-info">
+
+                    <h3>
+                        Jessica Chastain
+                    </h3>
+
+                    <p>
+                        Murph
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cast-card">
+
+                <div class="cast-image">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/2m8X9P7K4L6Q5V3C2N8J4M7H1R.jpg"
+                        alt="Michael Caine"
+                    >
+
+                </div>
+
+                <div class="cast-info">
+
+                    <h3>
+                        Michael Caine
+                    </h3>
+
+                    <p>
+                        Professor Brand
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="content-section similar-section">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="section-label">
+                    DISCOVER MORE
+                </p>
+
+                <h2>
+                    You May Also Like
+                </h2>
+
+            </div>
+
+
+            <a
+                href="movies.html"
+                class="see-all"
+            >
+                See All →
+            </a>
+
+        </div>
+
+
+        <div class="similar-grid">
+            <div
+                class="similar-card"
+                onclick="openMovie(2)"
+            >
+
+                <div class="similar-poster">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+                        alt="Inception"
+                    >
+
+                    <span class="similar-rating">
+                        ⭐ 8.8
+                    </span>
+
+                </div>
+
+                <div class="similar-info">
+
+                    <h3>
+                        Inception
+                    </h3>
+
+                    <p>
+                        2010 • Sci-Fi
+                    </p>
+
+                </div>
+
+            </div>
+            <div
+                class="similar-card"
+                onclick="openMovie(3)"
+            >
+
+                <div class="similar-poster">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                        alt="Dune Part Two"
+                    >
+
+                    <span class="similar-rating">
+                        ⭐ 8.6
+                    </span>
+
+                </div>
+
+                <div class="similar-info">
+
+                    <h3>
+                        Dune: Part Two
+                    </h3>
+
+                    <p>
+                        2024 • Sci-Fi
+                    </p>
+
+                </div>
+
+            </div>
+            <div
+                class="similar-card"
+                onclick="openMovie(4)"
+            >
+
+                <div class="similar-poster">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+                        alt="The Batman"
+                    >
+
+                    <span class="similar-rating">
+                        ⭐ 7.8
+                    </span>
+
+                </div>
+
+                <div class="similar-info">
+
+                    <h3>
+                        The Batman
+                    </h3>
+
+                    <p>
+                        2022 • Action
+                    </p>
+
+                </div>
+
+            </div>
+            <div
+                class="similar-card"
+                onclick="openMovie(5)"
+            >
+
+                <div class="similar-poster">
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg"
+                        alt="Avatar"
+                    >
+
+                    <span class="similar-rating">
+                        ⭐ 7.8
+                    </span>
+
+                </div>
+
+                <div class="similar-info">
+
+                    <h3>
+                        Avatar
+                    </h3>
+
+                    <p>
+                        2009 • Fantasy
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+<div
+    class="modal"
+    id="trailerModal"
+>
+
+    <div class="modal-content">
+
+
+        <button
+            class="close-modal"
+            id="closeModal"
+        >
+            ×
+        </button>
+
+
+        <div class="trailer-placeholder">
+
+            <div class="play-circle">
+                ▶
+            </div>
+
+            <h2>
+                Movie Trailer
+            </h2>
+
+            <p>
+                Trailer preview
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+<footer class="footer">
+
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                <span>
+                    Cine<span class="logo-accent">
+                        Verse
+                    </span>
+                </span>
+
+            </a>
+
+
+            <p>
+                Your world of movies & series.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="movies.html">
+                Movies
+            </a>
+
+            <a href="series.html">
+                Series
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+           
+        </p>
+
+    </div>
+
+
+</footer>
+
+
+<script src="details.js"></script>
+
+</body>
+
+</html>
